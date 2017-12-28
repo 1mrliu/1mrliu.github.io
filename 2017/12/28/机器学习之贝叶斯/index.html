@@ -5,14 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>分类算法之朴素贝叶斯分类 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="贝叶斯简介 简介  看了下周志华机器学习中的贝叶斯网络这块，对于贝叶斯的理解有了一定的理解，所以写个博客记录下。贝叶斯分类是一类分类算法的总称，这类算法均以贝叶斯定理为基础，因此统称为贝叶斯分类。首先介绍下分类问题，对分类问题进行定义。然后，介绍贝叶斯分类算法的基础-贝叶斯定理。最后，通过实例讨论贝叶斯分类中的朴素贝叶斯分类    2 . 分类问题介绍    分类问题在现实生活中的例子是：我们看到">
+<meta name="keywords" content="机器学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分类算法之朴素贝叶斯分类">
+<meta property="og:url" content="http://yoursite.com/2017/12/28/机器学习之贝叶斯/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="贝叶斯简介 简介  看了下周志华机器学习中的贝叶斯网络这块，对于贝叶斯的理解有了一定的理解，所以写个博客记录下。贝叶斯分类是一类分类算法的总称，这类算法均以贝叶斯定理为基础，因此统称为贝叶斯分类。首先介绍下分类问题，对分类问题进行定义。然后，介绍贝叶斯分类算法的基础-贝叶斯定理。最后，通过实例讨论贝叶斯分类中的朴素贝叶斯分类    2 . 分类问题介绍    分类问题在现实生活中的例子是：我们看到">
+<meta property="og:updated_time" content="2017-12-28T05:14:30.522Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="分类算法之朴素贝叶斯分类">
+<meta name="twitter:description" content="贝叶斯简介 简介  看了下周志华机器学习中的贝叶斯网络这块，对于贝叶斯的理解有了一定的理解，所以写个博客记录下。贝叶斯分类是一类分类算法的总称，这类算法均以贝叶斯定理为基础，因此统称为贝叶斯分类。首先介绍下分类问题，对分类问题进行定义。然后，介绍贝叶斯分类算法的基础-贝叶斯定理。最后，通过实例讨论贝叶斯分类中的朴素贝叶斯分类    2 . 分类问题介绍    分类问题在现实生活中的例子是：我们看到">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-机器学习之贝叶斯" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-机器学习之贝叶斯" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/28/机器学习之贝叶斯/" class="article-date">
   <time datetime="2017-12-28T05:12:20.000Z" itemprop="datePublished">2017-12-28</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/机器学习之贝叶斯/">分类算法之朴素贝叶斯分类</a>
+    <h1 class="article-title" itemprop="name">
+      分类算法之朴素贝叶斯分类
     </h1>
   
 
@@ -121,93 +124,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/28/My-New-Post/" class="article-date">
-  <time datetime="2017-12-28T02:31:29.000Z" itemprop="datePublished">2017-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/My-New-Post/">My New  Post</a>
-    </h1>
+    <a href="/2017/12/28/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">My New  Post</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="使用hexo搭建博客，全程花费不到两个小时，主要的任务在于markdown文件的编写"><a href="#使用hexo搭建博客，全程花费不到两个小时，主要的任务在于markdown文件的编写" class="headerlink" title="使用hexo搭建博客，全程花费不到两个小时，主要的任务在于markdown文件的编写"></a>使用hexo搭建博客，全程花费不到两个小时，主要的任务在于markdown文件的编写</h1><ol>
-<li>下载插件</li>
-<li>安装Git</li>
-<li>下载Hexo</li>
-<li>搭建博客</li>
-<li>配置主题</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/28/My-New-Post/" data-id="cjbq1cmn80000eoq2yr39gn3r" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test-blog/">Test blog</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/28/index/" class="article-date">
-  <time datetime="2017-12-27T16:58:28.000Z" itemprop="datePublished">2017-12-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/index/">Test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This is my first Blog!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/28/index/" data-id="cjbq1cmn80001eoq2wjbxir89" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
