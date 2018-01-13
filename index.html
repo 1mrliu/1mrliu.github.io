@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,45 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-使用Git上传本地代码到Github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/13/使用Git上传本地代码到Github/" class="article-date">
+  <time datetime="2018-01-13T14:10:46.000Z" itemprop="datePublished">2018-01-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/13/使用Git上传本地代码到Github/">使用Git上传本地代码到Github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.进入本地的项目目录，右键“Git Bash here”,调出git命令行界面，然后输入<br>  git init<br>2.就是将目录下的所有文件上传<br>  git add .<br>  如果想添加某个特定的文件，只需把.换成特定的文件名即可<br>3.将项目提交到gitHub<br>    git commit -m “注释语句”<br>4.在github上创建新的repository<br>  这个步骤比较简单，直接去Github上边去创建即可。<br>5.点击 “Create repository”跳转到一个连接，可以获取到创建的仓库的https或者ssh地址<br>6.将本地的代码关联到github上<br>    git remote add origin 项目的github地址<br>    （如果使用https链接的话，直接就可以链接。<br>      如果使用ssh链接的话的需要配置ssh）<br>7.上传代码到github之前需要先pull<br>  git pull origin master<br>8.上传代码到远程仓库<br>  git push -u origin master </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/13/使用Git上传本地代码到Github/" data-id="cjcdiw1j40000ycq235rv002s" class="article-share-link">Compartir</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git使用/">Git使用</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-机器学习之贝叶斯" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -113,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/28/机器学习之贝叶斯/" data-id="cjcdi3j780003gsq2y2n55m78" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/28/机器学习之贝叶斯/" data-id="cjcdiw1jj0004ycq2xsfwyrqr" class="article-share-link">Compartir</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
@@ -158,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/28/My-New-Post/" data-id="cjcdi3j6t0000gsq2jf3grupr" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/28/My-New-Post/" data-id="cjcdiw1jh0003ycq2lncd4963" class="article-share-link">Compartir</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test-blog/">Test blog</a></li></ul>
@@ -197,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/28/index/" data-id="cjcdi3j700001gsq2wixl3r9a" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/28/index/" data-id="cjcdiw1ja0001ycq2ukykj4gp" class="article-share-link">Compartir</a>
       
       
     </footer>
@@ -220,7 +259,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-blog/">Test blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git使用/">Git使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-blog/">Test blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
     </div>
   </div>
 
@@ -228,18 +267,18 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nube de Tags</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Test-blog/" style="font-size: 10px;">Test blog</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a>
+      <a href="/tags/Git使用/" style="font-size: 10px;">Git使用</a> <a href="/tags/Test-blog/" style="font-size: 10px;">Test blog</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
     </div>
   </div>
 
@@ -247,9 +286,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/01/13/使用Git上传本地代码到Github/">使用Git上传本地代码到Github</a>
+          </li>
         
           <li>
             <a href="/2017/12/28/机器学习之贝叶斯/">分类算法之朴素贝叶斯分类</a>
@@ -276,7 +319,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
